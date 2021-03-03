@@ -55,11 +55,7 @@ const client = new Client({
 client.on('message', msg => {
   if (msg.body == '!wc') {
     msg.reply('selamat datang');
-  } else if (msg.body == '!help') {
-    msg.reply('bodo amat');
   } else if (msg.body == 'good morning') {
-    msg.reply('selamat pagi');
-  } else if (msg.body == '!siang') {
     msg.reply('selamat pagi');
   } else if (msg.body == '!groups') {
     client.getChats().then(chats => {
